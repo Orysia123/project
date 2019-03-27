@@ -332,12 +332,12 @@ h1, h2, h3, h4, h5, h6, nav a {
 /*    display: none;*/
 /*  }*/
   
-@media (min-width: 1124px) {
+@media (min-width: 680px) {
   .banner .navigation {
       height: 65px;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
     }
     
