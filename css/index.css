@@ -1,11 +1,11 @@
 :root {
-  --main-color: #fff;  
+  --main-color: #fff;
 }
 
 body {
-    max-width: 1124px;
-    margin: auto;
-    font-family:'Raleway', sans-serif;
+  max-width: 1124px;
+  margin: auto;
+  font-family:'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, nav a {
@@ -13,46 +13,57 @@ h1, h2, h3, h4, h5, h6, nav a {
 }
 
 .banner {
-    background-image: url(../img/banner.jpg);
-    min-height: 690px;
-    background-size: cover;
-    background-position: center;
-    color: var(--main-color);
+  background-image: url(../img/banner.jpg);
+  min-height: 690px;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-color);
 }
 
+/*.banner .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+
 .banner .logo {
-    width: 112px;
-    height: 65px;
-    background-color: #ffc200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 112px;
+  height: 65px;
+  background-color: #ffc200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner .logo .logo-img {
-    width: 50%;
+  width: 50%;
 }
 
 .banner nav {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.8rem;
 }
 
 .banner nav a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .banner .soc-media-icons a {
-    color: inherit;
+  color: inherit;
 }
 
-.content-slider {
+.banner .content-slider {
   width: 100%;
   height: 360px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
+  
 .slider {
   height: 400px;
   width: 700px;
@@ -327,12 +338,106 @@ h1, h2, h3, h4, h5, h6, nav a {
 .more-about-button:hover {
     background-color: #ffc10c;  
 }
-/*@media(max-width: 460px) {*/
-/*  .banner .soc-media-icons {*/
-/*    display: none;*/
-/*  }*/
+
+@media (max-width: 540px)  {
+  .banner .soc-media-icons {
+    display: none;
+  }
   
-@media (min-width: 680px) {
+  .banner .menu-links {
+    display: none;
+  }
+  
+  .banner .content-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 20px;*/
+  }
+
+  .slider {
+    height: 400px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 20px;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .slider li {
+  width: 300px;
+  }
+  
+  .slider h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+.slider hr {
+    width: 100px;
+    height: 2px;
+}
+
+  .slider p {
+    font-size: 0.79rem;
+    line-height: 22px;
+  }
+}
+
+@media(min-width: 541px) and (max-width: 800px)  {
+  .banner .soc-media-icons {
+    display: none;
+  }
+  
+  /*.banner nav a:last-child {*/
+  /*    border-right: none;*/
+  /*  }*/
+    
+  
+  .banner .menu-links {
+    display: none;
+  }
+  
+  .banner .content-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider {
+    height: 400px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 20px;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .slider li {
+  width: 500px;
+  }
+  
+  .slider h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+.slider hr {
+    width: 100px;
+    height: 2px;
+}
+
+  .slider p {
+    font-size: 0.85rem;
+    line-height: 24px;
+  }
+}
+  
+@media(min-width: 801px ) {
   .banner .navigation {
       height: 65px;
       display: flex;
@@ -345,26 +450,26 @@ h1, h2, h3, h4, h5, h6, nav a {
       margin-left: 165px;
     }
   
-   .banner nav a:last-child {
-      border-right: 1px solid #242424;
-    }
+   /*.banner nav a:last-child {*/
+   /*   border-right: 1px solid #242424;*/
+   /* }*/
     
-    .banner nav a {
-      /*display: inline-block;*/
-      padding: 25px;
-    }
+  .banner nav a {
+    /*display: inline-block;*/
+    padding: 25px;
+  }
     
-    .banner nav a:hover,
-    .banner .soc-media-icons a:hover {
-        color: #ffbb01;
-    }
-    
-    .banner .soc-media-icons {
-      margin-left: 20px;
-    }
-    
-    .banner .soc-media-icons a {
-      color: var(--main-color);
-      margin: 10px;
-    }
+  .banner nav a:hover,
+  .banner .soc-media-icons a:hover {
+      color: #ffbb01;
+  }
+  
+  .banner .soc-media-icons {
+    margin-left: 20px;
+  }
+  
+  .banner .soc-media-icons a {
+    color: var(--main-color);
+    margin: 10px;
+  }
 }
