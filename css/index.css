@@ -374,6 +374,10 @@ h1, h2, h3, h4, h5, h6, nav a {
     display: none;
   }
   
+  .clock {
+    display: none;
+  }
+  
   .banner .content-slider {
     display: flex;
     flex-direction: row;
@@ -472,6 +476,10 @@ h1, h2, h3, h4, h5, h6, nav a {
     line-height: 24px;
   }
   
+  .clock {
+    display: none;
+  }
+  
   .works .section-info {
     display: flex;
     flex-direction: column;
@@ -528,6 +536,20 @@ h1, h2, h3, h4, h5, h6, nav a {
     margin: 10px 5px;
   }
   
+  .clock {
+    font-family: 'Nanum Gothic', sans-serif;;
+    width: 200px;
+    height: 50px;
+    color: #ffc10c;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    
+ }
+
   .banner .content-slider {
     width: 100%;
     height: 360px;
