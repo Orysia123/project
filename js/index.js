@@ -1,3 +1,21 @@
+function onReady(callback) {
+  let intervalId = window.setInterval(function() {
+    if (document.getElementsByTagName('body')[0] !== undefined) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector('#loading').style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+  setVisible('.main', true);
+  setVisible('#loading', false);
+});
+
 function showTime() {
     let date = new Date();
     let hours = date.getHours();
