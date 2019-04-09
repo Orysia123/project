@@ -1,3 +1,5 @@
+//adding a spinner when page loading
+
 function onReady(callback) {
   let intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -12,9 +14,28 @@ function setVisible(selector, visible) {
 }
 
 onReady(function() {
-  setVisible('.main', true);
-  setVisible('#loading', false);
+    setVisible('.main', true);
+    setVisible('#loading', false);
 });
+
+//change color of navigation when scrolling
+
+let nav = document.getElementById('navigation');
+
+window.addEventListener('scroll', function(event) {
+    event.preventDefault();
+
+    if (window.scrollY <= 7000) {
+        nav.style.backgroundColor = '#000';
+        nav.style.width = '1124px';
+        
+    } else {
+        nav.style.backgroundColor = 'transparent';
+    }
+});
+
+
+//digital clock
 
 function showTime() {
     let date = new Date();

@@ -8,18 +8,21 @@
   display: none;
 }
 
-#loading {
+.loading {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
+  z-index: 500;
+  width: 100vw;
+  height: 7000px;
   background-color: #000;
-  background-image: url(../img/loading.gif);
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.loading .loading-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
 body {
@@ -41,11 +44,12 @@ h1, h2, h3, h4, h5, h6, nav a {
   z-index: 1;
 }
 
-/*.banner .navigation {
+.banner .navigation {
   position: fixed;
+  z-index: 100;
   top: 0;
-  left: 0;
-}*/
+  left: 100;
+}
 
 .banner .logo {
   width: 112px;
@@ -346,7 +350,7 @@ h1, h2, h3, h4, h5, h6, nav a {
   margin: -25px 580px;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 .more-about-button a {
@@ -375,6 +379,7 @@ h3 {
 
 h3 span {
   color: #d5ca54;
+  padding: 10px 0;
 }
 
 .works .section-info hr,
