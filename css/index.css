@@ -339,7 +339,8 @@ h1, h2, h3, h4, h5, h6, nav a {
   }
 }
 
-.more-about-button {
+.more-about-button,
+.back-to-top {
   width: 200px;
   height: 50px;
   background-color: #e64e04;
@@ -353,14 +354,16 @@ h1, h2, h3, h4, h5, h6, nav a {
   z-index: 5;
 }
 
-.more-about-button a {
+.more-about-button a,
+.back-to-top a {
   color: var(--main-color);
   font-size: 0.9rem;
   font-weight: 900;
   text-decoration: none; 
 }
 
-.more-about-button:hover {
+.more-about-button:hover,
+.back-to-top:hover {
     background-color: #ffc10c;  
 }
 
@@ -368,8 +371,12 @@ h1, h2, h3, h4, h5, h6, nav a {
   background-color: #101417;
 }
 
-.services {
+.services, .contact {
   background-color: #12151c;
+}
+
+.footer {
+  background-color: #0e1215;
 }
 
 h3 {
