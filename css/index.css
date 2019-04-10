@@ -15,7 +15,7 @@
   left: 0;
   z-index: 500;
   width: 100vw;
-  height: 7000px;
+  height: 11000px;
   background-color: #000;
 }
 
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, nav a {
 .slider {
   height: 400px;
   width: 650px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 180px;
   overflow: visible;
   position: relative;
@@ -364,17 +364,22 @@ h1, h2, h3, h4, h5, h6, nav a {
     background-color: #ffc10c;  
 }
 
-.works, .services {
+.works, .about {
   background-color: #101417;
+}
+
+.services {
+  background-color: #12151c;
 }
 
 h3 {
   color: var(--main-color);
   margin-top: 0;
-  padding-top: 70px;
+  padding: 70px 0 10px 0;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 
 h3 span {
@@ -383,7 +388,9 @@ h3 span {
 }
 
 .works .section-info hr,
-.services .section-info hr{
+.services .section-info hr,
+.about .section-info hr,
+.about .team-section-info hr {
   width: 100px;
   height: 2px;
   margin-left: 0;
@@ -392,14 +399,18 @@ h3 span {
 }
 
 .works .section-info .paragraph,
-.services .section-info p {
+.services .section-info p,
+.about .section-info p {
   color: var(--paragraph-color);
+  font-size: 1.1rem;
   line-height: 1.7rem;
   margin: 20px 0 50px 0;
 }
 
-.services .section-info p {
+.services .section-info p,
+.about .section-info p {
   margin-bottom: 30px;
+  color: #585b62;
 }
   
 .works .project-works {
@@ -407,22 +418,56 @@ h3 span {
   flex-wrap: wrap;
 }
 
-.services .services-proposals h3 {
+.services .services-proposals h3,
+.about .about-us h3,
+.about .team h3 {
+  padding: 0;
   color: #f8c701;
   text-transform: capitalize;
   font-weight: 600;
-  padding-top: 10px;
 }
 
 .services .section-info p,
-.services .services-proposals p {
-  color: #585b62;
+.services .services-proposals p,
+.about .about-us p,
+.about .team p {
+  color: #575b5e;
 }
 
-.services .services-proposals p {
+.services .services-proposals p,
+.about .about-us p,
+.about .team p {
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3rem;
+  padding: 20px 0;
+}
+
+.about .team {
+  padding-top: 20px;
+}
+
+.about .team h3 {
+  padding: 10px 0;
+}
+
+.about .team span {
+  color: var(--main-color);
+  font-size: 0.7rem;
+  margin: 20px 0;
+}
+
+.about .team p {
+  padding: 10px 0;
+}
+
+.about .team .soc-media-profiles a {
+  color: var(--main-color);
+  padding: 20px 10px 20px 0;
+}
+
+.about .team .soc-media-profiles a:hover {
+  color: #ffbb01; 
 }
 
 
@@ -499,6 +544,32 @@ h3 span {
     grid-template-rows: 1fr;
     justify-content: space-between;
   }
+  
+  .about .about-us {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+   .about .team {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+  }
+  
+  .about .team img {
+    width: 100%;
+  }
+  
+  .about .team .soc-media-profiles {
+    color: var(--main-color);
+    padding: 20px 0;
+  }
 }
 
 @media(min-width: 541px) and (max-width: 800px)  {
@@ -506,8 +577,20 @@ h3 span {
     display: none;
   }
   
+  .banner .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .banner .menu-links {
     display: none;
+    width: 100%;
+  }
+  
+  .banner .menu-links a {
+    display: block;
+    text-align: center;
   }
   
   .banner .content-slider {
@@ -576,6 +659,32 @@ h3 span {
     grid-column-gap: 20px;
     grid-row-gap: 5px;
   }
+  
+  .about .about-us {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .about .team {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+  }
+  
+  .about .team img {
+    width: 100%;
+  }
+  
+  .about .team .soc-media-profiles {
+    color: var(--main-color);
+    padding: 20px 0;
+  }
 }
   
 @media(min-width: 801px ) {
@@ -631,7 +740,8 @@ h3 span {
   }
   
   .works .section-info,
-  .services .section-info{
+  .services .section-info,
+  .about .section-info {
     margin-left: 100px;
     margin-right: 100px;
   }
@@ -641,7 +751,8 @@ h3 span {
     height: 25%;
   }
   
-  .services .services-proposals {
+  .services .services-proposals,
+  .about .team {
     margin: 0 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -649,5 +760,29 @@ h3 span {
     justify-content: space-between;
     grid-column-gap: 20px;
     grid-row-gap: 5px;
+  }
+  
+  .about .about-us {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+  }
+  
+  .about .team {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+  }
+  
+  .about .team img {
+    width: 100%;
   }
 }
