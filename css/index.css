@@ -397,7 +397,8 @@ h3 span {
 .works .section-info hr,
 .services .section-info hr,
 .about .section-info hr,
-.about .team-section-info hr {
+.about .team-section-info hr,
+.contact .section-info hr {
   width: 100px;
   height: 2px;
   margin-left: 0;
@@ -407,7 +408,8 @@ h3 span {
 
 .works .section-info .paragraph,
 .services .section-info p,
-.about .section-info p {
+.about .section-info p,
+.contact .form-col2 p:first-child {
   color: var(--paragraph-color);
   font-size: 1.1rem;
   line-height: 1.7rem;
@@ -415,7 +417,8 @@ h3 span {
 }
 
 .services .section-info p,
-.about .section-info p {
+.about .section-info p,
+.contact .form-col2 p {
   margin-bottom: 30px;
   color: #585b62;
 }
@@ -477,6 +480,69 @@ h3 span {
   color: #ffbb01; 
 }
 
+.contact .contacts .form-col1 fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #000;
+}
+
+.contact .contacts .form-col1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contacts label {
+  padding: 10px 0;
+}
+
+.contact .contacts .form-col1 input {
+  width: 100%;
+  height: 30px;
+  background-color: #292c31;
+  border: none; 
+  margin: 0;
+  color: var(--main-color);
+}
+
+.contact .contacts .form-col1 textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #292c31;
+  border: none; 
+  padding: 0;
+  color: var(--main-color);
+}
+
+.contact .contacts .form-col1 button {
+  width: 100%;
+  height: 30px;
+  background-color: #fdc401;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.contact .contacts .form-col2  {
+ margin: 10px 0 10px 40px;
+}
+
+.contact .contacts .form-col2 p {
+  margin: 0;
+}
+
+.contact .contacts .form-col2 h3 {
+  padding-top: 30px;
+  color: #f8c701;
+  text-transform: capitalize;
+}
+
+.contact .contacts .form-col2 h3 + p {
+  font-size: 0.9rem;
+}
 
 @media (max-width: 540px)  {
   .banner .soc-media-icons {
@@ -577,6 +643,17 @@ h3 span {
     color: var(--main-color);
     padding: 20px 0;
   }
+  
+  .contact .contacts .form-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .contacts .form-col1 fieldset {
+    width: 300px;
+  }
 }
 
 @media(min-width: 541px) and (max-width: 800px)  {
@@ -636,7 +713,8 @@ h3 span {
     line-height: 24px;
   }
   
-  .more-about-button {
+  .more-about-button,
+  .back-to-top {
     margin: -25px auto;
   }
   
@@ -692,6 +770,17 @@ h3 span {
     color: var(--main-color);
     padding: 20px 0;
   }
+  
+  .contact .contacts .form-col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .contacts .form-col1 fieldset {
+    width: 500px;
+  }
 }
   
 @media(min-width: 801px ) {
@@ -701,7 +790,7 @@ h3 span {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    }
+  }
     
   .banner .logo {
     margin-left: 100px;
@@ -726,7 +815,7 @@ h3 span {
 
   .banner nav a:last-child {
       border-right: 1px solid #242424;
-    }
+  }
     
   .banner .soc-media-icons {
     margin-left: 20px;
@@ -792,4 +881,22 @@ h3 span {
   .about .team img {
     width: 100%;
   }
+  
+  .contact .contacts {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact .section-info {
+    margin: 0 0 20px 100px;
+  }
+  
+ .contact .contacts .form-col1 {
+   width: 45%;
+ }
+ 
+ .contact .contacts .form-col2 {
+   width: 45%;
+ }
 }
