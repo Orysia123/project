@@ -471,6 +471,10 @@ h3 span {
   padding: 10px 0;
 }
 
+.about .team .soc-media-profiles {
+  margin-bottom: 70px;
+}
+
 .about .team .soc-media-profiles a {
   color: var(--main-color);
   padding: 20px 10px 20px 0;
