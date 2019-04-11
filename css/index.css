@@ -446,7 +446,8 @@ h3 span {
 
 .services .services-proposals p,
 .about .about-us p,
-.about .team p {
+.about .team p,
+.footer-info p {
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3rem;
@@ -531,7 +532,7 @@ h3 span {
 }
 
 .contact .contacts .form-col2  {
- margin: 10px 0 10px 40px;
+  margin: 10px 0 40px 10px;
 }
 
 .contact .contacts .form-col2 p {
@@ -546,6 +547,69 @@ h3 span {
 
 .contact .contacts .form-col2 h3 + p {
   font-size: 0.9rem;
+}
+
+.more-about-button {
+  margin: -25px auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: var(--paragraph-color);
+}
+
+.footer .soc-icons-footer {
+  margin: 80px 0 20px 0;
+  font-size: 2rem;
+}
+
+.footer .soc-icons-footer a {
+  color: #28292d;
+  padding: 25px 10px;
+}
+
+.footer hr {
+  width: 200px;
+  height: 2px;
+  border: none;
+  background-color: #292a2e;
+}
+
+.footer .soc-icons-footer a:hover {
+   color: var(--main-color);
+}
+
+.footer .footer-info .footer-logo p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #292a2e;
+  letter-spacing: 0.3rem;
+  margin: 0 auto;
+}
+
+.footer p {
+  width: 0.8rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 1.2rem;
+  color: #292a2e;
+}
+
+.footer .copyright {
+  width: 70%;
+}
+
+.footer .copyright p {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #292a2e;
 }
 
 @media (max-width: 540px)  {
@@ -597,7 +661,8 @@ h3 span {
     line-height: 22px;
   }
   
-  .more-about-button {
+  .more-about-button, 
+  .back-to-top {
     margin: -25px auto;
   }
   
@@ -657,6 +722,14 @@ h3 span {
   
   .contact .contacts .form-col1 fieldset {
     width: 300px;
+  }
+  
+  .contact .contacts .form-col2  {
+    margin: 10px 10px 0 10px;
+  }
+  
+  .contact .contacts .form-col2 p:last-child {
+    padding-bottom: 40px;
   }
 }
 
@@ -785,6 +858,14 @@ h3 span {
   .contact .contacts .form-col1 fieldset {
     width: 500px;
   }
+  
+  .contact .contacts .form-col2  {
+    margin: 10px 10px 0 10px;
+  }
+  
+  .contact .contacts .form-col2 p:last-child {
+    padding-bottom: 40px;
+  }
 }
   
 @media(min-width: 801px ) {
@@ -902,5 +983,9 @@ h3 span {
  
  .contact .contacts .form-col2 {
    width: 45%;
+ }
+ 
+ .back-to-top {
+   margin: -25px auto;
  }
 }
