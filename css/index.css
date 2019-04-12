@@ -78,15 +78,15 @@ h1, h2, h3, h4, h5, h6, nav a {
 }
 
 .clock {
-    font-family: 'Nanum Gothic', sans-serif;;
-    width: 200px;
-    height: 50px;
-    color: #ffc10c;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  font-family: 'Nanum Gothic', sans-serif;;
+  width: 200px;
+  height: 50px;
+  color: #ffc10c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
  }
 
 .banner .content-slider {
@@ -360,7 +360,6 @@ h1, h2, h3, h4, h5, h6, nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -25px 580px;
   cursor: pointer;
   position: relative;
   z-index: 5;
@@ -376,7 +375,7 @@ h1, h2, h3, h4, h5, h6, nav a {
 
 .more-about-button:hover,
 .back-to-top:hover {
-    background-color: #ffc10c;  
+  background-color: #ffc10c;  
 }
 
 .works, .about {
@@ -592,7 +591,7 @@ h3 span {
 }
 
 .footer .soc-icons-footer a:hover {
-   color: var(--main-color);
+  color: var(--main-color);
 }
 
 .footer .footer-info .footer-logo p {
@@ -663,7 +662,7 @@ h3 span {
   }
   
   .banner .menu-links a:hover {
-      color: #ffbb01;
+    color: #ffbb01;
   }
   
   .toggle .menu-links {
@@ -677,7 +676,6 @@ h3 span {
     z-index: 950;
     display: block;
   }
-  
   
   .banner .soc-media-icons {
     display: none;
@@ -723,7 +721,6 @@ h3 span {
     line-height: 22px;
   }
   
-  .more-about-button, 
   .back-to-top {
     margin: -25px auto;
   }
@@ -756,7 +753,7 @@ h3 span {
     grid-template-rows: 1fr;
   }
   
-   .about .team {
+  .about .team {
     margin: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -890,7 +887,6 @@ h3 span {
     line-height: 24px;
   }
   
-  .more-about-button,
   .back-to-top {
     margin: -25px auto;
   }
@@ -996,11 +992,11 @@ h3 span {
   
   .banner nav a:hover,
   .banner .soc-media-icons a:hover {
-      color: #ffbb01;
+    color: #ffbb01;
   }
 
   .banner nav a:last-child {
-      border-right: 1px solid #242424;
+    border-right: 1px solid #242424;
   }
     
   .banner .soc-media-icons {
@@ -1031,6 +1027,10 @@ h3 span {
   .works .project-works img {
     width: 25%;
     height: 25%;
+  }
+  
+  .back-to-top {
+    margin: -25px auto;
   }
   
   .services .services-proposals,
@@ -1086,7 +1086,7 @@ h3 span {
    width: 45%;
  }
  
- .back-to-top {
-   margin: -25px auto;
+ .more-about-button {
+    margin: -25px 580px;
  }
 }
