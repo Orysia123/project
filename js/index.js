@@ -27,7 +27,6 @@ window.addEventListener('scroll', function(event) {
 
     if (window.scrollY <= 7000) {
         nav.style.backgroundColor = '#000';
-        nav.style.width = '1124px';
         
     } else {
         nav.style.backgroundColor = 'transparent';
