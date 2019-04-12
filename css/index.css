@@ -970,6 +970,7 @@ h3 span {
   
 @media(min-width: 801px ) {
   .banner .navigation {
+    width: 1124px;
     height: 65px;
     display: flex;
     flex-direction: row;
