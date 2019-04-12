@@ -81,3 +81,16 @@ function addZero(time) {
 showTime();
 setInterval(showTime, 1000);
 
+//toggle menu
+
+const bannerMenu = document.querySelector('#menu-links');
+const menuToggle = document.querySelector('#menu-toggle');
+
+menuToggle.addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (window.getComputedStyle(bannerMenu).display === 'block') {
+    bannerMenu.style.display = 'none';
+    } else  {
+   bannerMenu.style.display = 'block';
+    }
+});
