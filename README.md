@@ -1,0 +1,1 @@
+This is a project for learning purposes. I took a ready website template from https://www.styleshout.com/new-website-template-kreo/ where they used different frameworks and libraries. My aim was to create a similar website using html, css and js just to practise.
